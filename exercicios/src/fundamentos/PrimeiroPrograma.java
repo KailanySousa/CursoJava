@@ -4,7 +4,6 @@ package fundamentos;
  * Essa classe representa... JavaDOC
  * @author Kailany Sousa <kailanysousag@gmail.com>
  * @since JDK1.0
- * @see
  *
  */
 public class PrimeiroPrograma {
