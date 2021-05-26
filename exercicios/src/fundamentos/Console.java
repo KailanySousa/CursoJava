@@ -22,12 +22,12 @@ public class Console {
 		Scanner entrada = new Scanner(System.in);
 		
 		System.out.print("Digite seu nome: ");
-		String nome = entrada.nextLine();
+		String nome = entrada.nextLine(); // lendo uma string
 		
 		System.out.println("\n\nNome = " + nome);
 		
 		System.out.print("Digite seu sobrenome: ");
-		String sobrenome = entrada.nextLine();
+		String sobrenome = entrada.nextLine(); // lendo uma string
 		
 		System.out.println("\n\nNome = " + nome + " " + sobrenome);
 		
