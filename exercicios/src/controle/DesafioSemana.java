@@ -9,6 +9,7 @@ public class DesafioSemana {
 		
 		String diaSemana = entrada.nextLine();
 		
+		// solução resolvida por mim
 		if(diaSemana.toLowerCase().equals("domingo")) {
 			System.out.println("1");
 		} else if(diaSemana.toLowerCase().equals("segunda")) {
@@ -20,6 +21,23 @@ public class DesafioSemana {
 		} else if(diaSemana.toLowerCase().equals("quinta")) {
 			System.out.println("5");
 		} else if(diaSemana.toLowerCase().equals("sexta")) {
+			System.out.println("6");
+		} else {
+			System.out.println("7");
+		}
+		
+		// solução do curso
+		if("domingo".equalsIgnoreCase(diaSemana)) {
+			System.out.println("1");
+		} else if("segunda".equalsIgnoreCase(diaSemana)) {
+			System.out.println("2");
+		} else if("terça".equalsIgnoreCase(diaSemana)) {
+			System.out.println("3");
+		} else if("quarta".equalsIgnoreCase(diaSemana)) {
+			System.out.println("4");
+		} else if("quinta".equalsIgnoreCase(diaSemana)) {
+			System.out.println("5");
+		} else if("sexta".equalsIgnoreCase(diaSemana)) {
 			System.out.println("6");
 		} else {
 			System.out.println("7");
