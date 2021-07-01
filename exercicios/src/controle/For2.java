@@ -1,6 +1,5 @@
 package controle;
 
-import java.util.Scanner;
 
 public class For2 {
 	public static void main(String[] args) {
