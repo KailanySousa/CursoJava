@@ -12,7 +12,7 @@ public class DesafioWhile {
 		double total = 0;
 		
 		while(nota != -1) {
-			System.out.println("Informe a nota");
+			System.out.println("Informe a nota (ou -1 p/ sair)");
 			nota = entrada.nextDouble();
 			if(nota >= 0 && nota <= 10) {
 				total += nota;
