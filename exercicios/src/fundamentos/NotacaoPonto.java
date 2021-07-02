@@ -2,8 +2,6 @@ package fundamentos;
 
 public class NotacaoPonto {
 	public static void main(String[] args) {
-		double a = 2.3;
-		
 		/*
 		 * String  é um tipo não primitivo
 		 * não primitivo possui mais funções
