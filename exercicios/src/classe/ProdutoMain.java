@@ -4,10 +4,10 @@ public class ProdutoMain {
 
 	public static void main(String[] args) {
 	
-		Produto p1 = new Produto();
-		p1.nome = "Notebook";
-		p1.preco = 4500.00;
-		p1.desconto = 0.25;
+		Produto p1 = new Produto("Notebook", 4500.00, 0.25);
+//		p1.nome = "Notebook";
+//		p1.preco = 4500.00;
+//		p1.desconto = 0.25;
 		
 		var p2 = new Produto();
 		p1.nome = "Caneta Azul";
