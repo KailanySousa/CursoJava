@@ -20,6 +20,8 @@ public class ProdutoMain {
 		double precoFinal1 = p1.preco * (1-p1.desconto);
 		double precoFinal2 = p2.preco * (1-p2.desconto);
 		
+		System.out.println("Preco com desconto gerente  " + p1.precoComDescontoGerente(0.10));
+		
 		System.out.println("Preço total = " + (precoFinal1 + precoFinal2));
 	}
 
