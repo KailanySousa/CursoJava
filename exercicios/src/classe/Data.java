@@ -12,6 +12,6 @@ public class Data {
 
 	// metodo adicionado
 	String dataFormatoUS() {
-		return String.format("%d-%d-%d", ano, mes, dia);
+		return String.format("%d-%d-%d", this.ano, this.mes, this.dia);
 	}
 }
