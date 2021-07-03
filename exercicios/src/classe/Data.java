@@ -6,12 +6,12 @@ public class Data {
 	int ano;
 
 	// metodo adicionado
-	public String dataFormatoBR() {
+	String dataFormatoBR() {
 		return this.dia + "/" + this.mes + "/" + this.ano;
 	}
 
 	// metodo adicionado
-	public String dataFormatoUS() {
-		return this.ano + "-" + this.mes + "-" + this.dia;
+	String dataFormatoUS() {
+		return String.format("%d-%d-%d", ano, mes, dia);
 	}
 }
