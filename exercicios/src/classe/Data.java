@@ -6,9 +6,12 @@ public class Data {
 	int ano;
 	
 	Data(){
-		this.dia = 1;
-		this.mes = 1;
-		this.ano = 1970;
+//		this.dia = 1;
+//		this.mes = 1;
+//		this.ano = 1970;
+		
+		// um construtor pode chamar outro construtor
+		this(1,1,1970);
 	}
 	
 	Data(int dia, int mes, int ano){
