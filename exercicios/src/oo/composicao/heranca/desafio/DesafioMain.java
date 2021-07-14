@@ -4,7 +4,7 @@ public class DesafioMain {
 
 	public static void main(String[] args) {
 
-		Carro carro = new Carro();
+		Carro carro = new Carro(120);
 		carro.acelerar();
 		System.out.println("Velocidade Carro => " + carro.velocidade);
 
@@ -17,7 +17,7 @@ public class DesafioMain {
 		carro.frear();
 		System.out.println("Velocidade Carro => " + carro.velocidade);
 
-		Civic civic = new Civic();
+		Civic civic = new Civic(212);
 
 		civic.acelerar();
 		System.out.println("Velocidade Civic => " + civic.velocidade);
