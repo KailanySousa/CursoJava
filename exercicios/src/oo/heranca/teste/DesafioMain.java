@@ -24,9 +24,14 @@ public class DesafioMain {
 		Ferrari ferrari = new Ferrari();
 
 		ferrari.acelerar();
+		ferrari.acelerar();
 		System.out.println("Velocidade Ferrari => " + ferrari.velocidade);
 
-		ferrari.acelerar();
+		ferrari.ligarTurbo();
+		ferrari.ligarAr();
+		System.out.println("Velocidade Ferrari => " + ferrari.velocidade);
+		
+		ferrari.desligarTurbo();
 		System.out.println("Velocidade Ferrari => " + ferrari.velocidade);
 
 		ferrari.frear();
