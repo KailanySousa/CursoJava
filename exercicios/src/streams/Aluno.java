@@ -17,4 +17,8 @@ public class Aluno {
 		this.nota = nota;
 		this.presenca = presenca;
 	}
+	
+	public String toString() {
+		return this.nome + " tem nota " + this.nota;
+	}
 }
