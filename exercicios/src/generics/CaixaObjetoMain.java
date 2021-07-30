@@ -1,4 +1,4 @@
-
+package generics;
 public class CaixaObjetoMain {
 
 	public static void main(String[] args) {
