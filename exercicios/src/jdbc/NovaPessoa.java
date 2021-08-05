@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+import jdbc.connection.Conexao;
+
 public class NovaPessoa {
 
 	public static void main(String[] args) throws SQLException {
