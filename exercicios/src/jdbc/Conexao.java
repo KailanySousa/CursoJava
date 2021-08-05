@@ -9,7 +9,7 @@ public class Conexao {
 	public static Connection getConexao() {
 		
 		try {
-			String url = "jdbc:mysql://localhost:3306?verifyServerCertificate=false&useSSL=true";
+			String url = "jdbc:mysql://localhost:3306/curso_java?verifyServerCertificate=false&useSSL=true";
 			String usuario = "root";
 			String senha = "140975";
 			Connection conexao = DriverManager.getConnection(url, usuario, senha);

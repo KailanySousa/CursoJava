@@ -4,18 +4,26 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CriarBanco {
+public class CriarTabelaPessoas {
 
 	public static void main(String[] args) throws SQLException {
 
 		Connection conexao = Conexao.getConexao();
-		
+
+		// text block
+		String sql = """ 
+					CREATE TABLE IF NOT EXISTS pessoas (
+						id INT AUTO_INCREMENT PRIMARY KEY,
+						nome VARCHAR(80) NOT NULL
+					);""";
+
 		Statement stmt = conexao.createStatement();
+		stmt.execute(sql);
 		
-		stmt.execute("CREATE DATABASE IF NOT EXISTS curso_java");
-		
-		System.out.println("Banco criado com sucesso!");
-		
+		System.out.println("Tabela criada com sucesso!");
+
 		conexao.close();
+
 	}
+
 }
