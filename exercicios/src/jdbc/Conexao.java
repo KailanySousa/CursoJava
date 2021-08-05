@@ -6,15 +6,18 @@ import java.sql.SQLException;
 
 public class Conexao {
 
-	public static void main(String[] args) throws SQLException {
+	public static Connection getConexao() {
 		
-		String url = "jdbc:mysql://localhost:3306?verifyServerCertificate=false&useSSL=true";
-		String usuario = "root";
-		String senha = "140975";
+		try {
+			String url = "jdbc:mysql://localhost:3306?verifyServerCertificate=false&useSSL=true";
+			String usuario = "root";
+			String senha = "140975";
+			Connection conexao = DriverManager.getConnection(url, usuario, senha);
 		
-		Connection conexao = DriverManager.getConnection(url, usuario, senha);
-		System.out.println("Conexão efetuada com sucesso!");
-		conexao.close();
+			return conexao;
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+		
 	}
-
 }
