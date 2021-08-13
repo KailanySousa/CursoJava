@@ -21,6 +21,8 @@
 		<class>modelo.muitospramuitos.Filme</class>
 		<class>modelo.composicao.Endereco</class>
 		<class>modelo.composicao.Fornecedor</class>
+		<class>modelo.heranca.Aluno</class>
+		<class>modelo.heranca.AlunoBolsista</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
