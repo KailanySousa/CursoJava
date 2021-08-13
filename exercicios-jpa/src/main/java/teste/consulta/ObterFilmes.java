@@ -11,7 +11,7 @@ public class ObterFilmes {
 		
 		DAO<Filme> dao = new DAO<>();
 		
-		List<Filme> filme = dao.consultar("obterFilmesComNotaMaiorQue", "nota", 8,5);
+		List<Filme> filmes = dao.consultar("obterFilmesComNotaMaiorQue", "nota", 8,5);
 		
 		for(Filme f: filmes) {
 			System.out.println(f.getNome());
