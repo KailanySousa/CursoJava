@@ -32,7 +32,9 @@ public class DAO<E> {
 	}
 	
 	public DAO<E> abrirT() {
-		em.getTransaction().begin();
+		if(!em.getTransaction().isActive()) {
+			em.getTransaction().begin();			
+		}
 		return this;
 	}
 	
