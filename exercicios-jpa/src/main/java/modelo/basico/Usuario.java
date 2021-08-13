@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Transient;
 
 @Entity
-public class Usuario {
+public class Usuario implements Entidade{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
