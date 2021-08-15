@@ -21,7 +21,11 @@ public class Contador extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		Label lblTitulo = new Label("Contador");
+		lblTitulo.getStyleClass().add("titulo");
+		
 		Label lblNumero = new Label("0");
+		lblNumero.getStyleClass().add("numero");
+		
 		Button btnDecremento = new Button("-");
 		Button btnIncremento = new Button("+");
 
@@ -42,6 +46,7 @@ public class Contador extends Application {
 		boxPrincipal.getChildren().add(lblNumero);
 
 		HBox boxSecundario = new HBox();
+		boxPrincipal.getStyleClass().add("conteudo");
 		boxSecundario.setSpacing(10);
 		boxSecundario.setAlignment(Pos.CENTER);
 		boxSecundario.getChildren().add(btnDecremento);
@@ -49,8 +54,11 @@ public class Contador extends Application {
 
 		boxPrincipal.getChildren().add(boxSecundario);
 
+		String pathCSS = getClass().getResource("/basico/Contador.css").toExternalForm();
 		Scene cena = new Scene(boxPrincipal, 400, 400);
-
+		cena.getStylesheets().add(pathCSS);
+		cena.getStylesheets().add("https://fonts.googleapis.com/css2?family=Oswald");
+		
 		primaryStage.setScene(cena);
 		primaryStage.show();
 
