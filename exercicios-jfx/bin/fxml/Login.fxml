@@ -3,17 +3,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.LoginController">
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.LoginController" styleClass="login">
 	
-	<Label text="Seja bem vindo" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+	<Label text="Seja bem vindo" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="login-titulo"></Label>
 	
-	<Label text="E-mail: " GridPane.columnIndex="0" GridPane.rowIndex="1"></Label>
+	<Label text="E-mail: " GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="login-form-label"></Label>
 	<TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="emailField"></TextField>
 	
-	<Label text="Senha: " GridPane.columnIndex="0" GridPane.rowIndex="2"></Label>
+	<Label text="Senha: " GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="login-form-label"></Label>
 	<PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="senhaField"></PasswordField>
 	
-	<Button text="Entrar" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#entrar"></Button>
+	<Button text="Entrar" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#entrar" styleClass="login-form-botao"></Button>
 	
 </GridPane>
 
