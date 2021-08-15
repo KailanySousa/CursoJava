@@ -17,6 +17,19 @@ public class Contador extends Application {
 		launch(args);
 	}
 
+	private void atualizarLbl(Label lblNumero) {
+		lblNumero.setText(Integer.toString(this.contador));
+		
+		lblNumero.getStyleClass().remove("verde");
+		lblNumero.getStyleClass().remove("vermelho");
+		
+		if(this.contador > 0) {
+			lblNumero.getStyleClass().add("verde");
+		} else if(this.contador < 0) {
+			lblNumero.getStyleClass().add("vermelho");
+		}
+	}
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
@@ -27,16 +40,19 @@ public class Contador extends Application {
 		lblNumero.getStyleClass().add("numero");
 		
 		Button btnDecremento = new Button("-");
-		Button btnIncremento = new Button("+");
-
+		btnDecremento.getStyleClass().add("botao");
+		
 		btnDecremento.setOnAction(e -> {
 			this.contador--;
-			lblNumero.setText(Integer.toString(this.contador));
+			this.atualizarLbl(lblNumero);
 		});
 		
+		Button btnIncremento = new Button("+");
+		btnIncremento.getStyleClass().add("botao");
+
 		btnIncremento.setOnAction(e -> {
 			this.contador++;
-			lblNumero.setText(Integer.toString(this.contador));
+			this.atualizarLbl(lblNumero);
 		});
 
 		VBox boxPrincipal = new VBox();
