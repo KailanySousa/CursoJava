@@ -5,6 +5,7 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +25,7 @@ public class ProdutoController {
 
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.PUT })
 	// @PostMapping
-	public @ResponseBody Produto novoProduto(@Valid Produto produto) {
+	public @ResponseBody Produto salvarProduto(@Valid Produto produto) {
 		produtoRepository.save(produto);
 		return produto;
 	}
@@ -43,6 +44,11 @@ public class ProdutoController {
 	@GetMapping(path = "/{id}")
 	public Optional<Produto> obterProdutoPorId(@PathVariable int id) {
 		return produtoRepository.findById(id);
+	}
+	
+	@DeleteMapping(path = "/{id}")
+	public void excluirProduto(@PathVariable int id) {
+		produtoRepository.deleteById(id);
 	}
 
 }
