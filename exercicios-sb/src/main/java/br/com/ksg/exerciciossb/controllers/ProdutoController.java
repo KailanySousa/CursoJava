@@ -16,13 +16,12 @@ public class ProdutoController {
 
 	@Autowired
 	private ProdutoRepository produtoRepository;
-	
+
 	@PostMapping("/inserir")
-	public @ResponseBody Produto novoProduto(@RequestParam String nome) {
-		Produto p = new Produto(nome);
+	public @ResponseBody Produto novoProduto(Produto produto) {
+
+		produtoRepository.save(produto);
 		
-		produtoRepository.save(p);
-		
-		return p;
+		return produto;
 	}
 }
