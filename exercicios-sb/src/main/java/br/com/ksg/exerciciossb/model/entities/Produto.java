@@ -28,6 +28,8 @@ public class Produto {
 	@Min(value = 0, message = "O desconto do produto não pode ser menor que 0")
 	@Max(value = 1, message = "O desconto do produto não pode ser maior que 1")
 	private double desconto;
+	
+	public Produto() {}
 
 	public Produto(String nome, double preco, double desconto) {
 		super();
