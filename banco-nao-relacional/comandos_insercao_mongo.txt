@@ -1,0 +1,16 @@
+db.{collection}.insert({nome: "Acre", sigla: "AC", regiao: "Norte"}) -> inserir dados em uma collection
+
+db.{collection}.save({nome: "Alagoas", sigla: "AL", regiao: "Nordeste", populacao: 3322000})
+
+não ocasiona erro caso os registros tenham atributos/campos diferentes
+
+ db.{collection}.insert({
+... nome: "Rio de Janeiro",
+... sigla:"RJ",
+... regiao: "Sudeste",
+... cidades: [{
+... nome: "Niterói",
+... area: 133.9,
+... populacao: 487562
+... }]
+... })
