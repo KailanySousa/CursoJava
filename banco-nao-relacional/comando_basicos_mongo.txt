@@ -1,0 +1,7 @@
+mongo é case sensitive
+
+show dbs -> exibe todos os bancos de dados
+use {db} -> selecionar o banco se estiver já existir
+db.createCollection('name') -> cria uma collection(tabela) se executado depois do comando anterior, será criada no banco informado
+show collection -> exibe as collections criadas
+db.{collection}.drop() -> excluir collection
